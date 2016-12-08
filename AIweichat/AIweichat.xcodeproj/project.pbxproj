@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC56001F1B9EC14A00C974D9 /* AIChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56001E1B9EC14A00C974D9 /* AIChatView.m */; };
+		BC5600211B9EC23C00C974D9 /* chatTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5600201B9EC23C00C974D9 /* chatTest.xib */; };
+		BCCB8E2E1B9EB40B004ED334 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8E2D1B9EB40B004ED334 /* friends.plist */; };
+		BCCB8E331B9EB557004ED334 /* UIImage+resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8E321B9EB557004ED334 /* UIImage+resizing.m */; };
+		BCCB8E371B9EB59E004ED334 /* AIChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8E361B9EB59E004ED334 /* AIChatController.m */; };
+		BCCB8E3B1B9EB5C5004ED334 /* AICellView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8E3A1B9EB5C5004ED334 /* AICellView.m */; };
+		BCCB8E411B9EB5D5004ED334 /* AICellDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8E3E1B9EB5D5004ED334 /* AICellDataModel.m */; };
+		BCCB8E421B9EB5D5004ED334 /* AICellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8E401B9EB5D5004ED334 /* AICellFrameModel.m */; };
+		BCCB8E441B9EB5E1004ED334 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8E431B9EB5E1004ED334 /* messages.plist */; };
+		BCCB8E461B9EB5E7004ED334 /* autoanswer.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8E451B9EB5E7004ED334 /* autoanswer.plist */; };
+		BCDF32411B9E7A3E00C9F0B4 /* AIParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32401B9E7A3E00C9F0B4 /* AIParentViewController.m */; };
+		BCDF32451B9E801400C9F0B4 /* AIRecentParentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32441B9E801400C9F0B4 /* AIRecentParentController.m */; };
+		BCDF324C1B9E888200C9F0B4 /* AIMyConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF324A1B9E888200C9F0B4 /* AIMyConfigController.m */; };
+		BCDF32511B9E8A6400C9F0B4 /* AIConfig.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDF32501B9E8A6400C9F0B4 /* AIConfig.storyboard */; };
+		BCDF32561B9E9E7200C9F0B4 /* AICreateBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32551B9E9E7200C9F0B4 /* AICreateBar.m */; };
+		BCDF32581B9E9FEC00C9F0B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDF32571B9E9FEC00C9F0B4 /* Main.storyboard */; };
+		BCDF32621B9EA03400C9F0B4 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF325E1B9EA03400C9F0B4 /* MBProgressHUD+NJ.m */; };
+		BCDF32631B9EA03400C9F0B4 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCDF325F1B9EA03400C9F0B4 /* MBProgressHUD.bundle */; };
+		BCDF32641B9EA03400C9F0B4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32611B9EA03400C9F0B4 /* MBProgressHUD.m */; };
+		BCDF32681B9EA34000C9F0B4 /* AILoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32671B9EA34000C9F0B4 /* AILoginController.m */; };
+		BCDF326B1B9EA5FB00C9F0B4 /* AIConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF326A1B9EA5FB00C9F0B4 /* AIConfigModel.m */; };
+		BCDF32791B9EB1DF00C9F0B4 /* AIQQGroupsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32761B9EB1DF00C9F0B4 /* AIQQGroupsModel.m */; };
+		BCDF327A1B9EB1DF00C9F0B4 /* AIFriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32781B9EB1DF00C9F0B4 /* AIFriendsModel.m */; };
+		BCDF327F1B9EB1EB00C9F0B4 /* AIFriendCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF327C1B9EB1EB00C9F0B4 /* AIFriendCellView.m */; };
+		BCDF32801B9EB1EB00C9F0B4 /* AIHeaderCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF327E1B9EB1EB00C9F0B4 /* AIHeaderCellView.m */; };
+		BCDF32831B9EB1F500C9F0B4 /* AIaddressBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF32821B9EB1F500C9F0B4 /* AIaddressBookController.m */; };
+		BCF45B271B9DB2ED00CEEE26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF45B261B9DB2ED00CEEE26 /* main.m */; };
+		BCF45B2A1B9DB2ED00CEEE26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF45B291B9DB2ED00CEEE26 /* AppDelegate.m */; };
+		BCF45B321B9DB2ED00CEEE26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF45B311B9DB2ED00CEEE26 /* Images.xcassets */; };
+		BCF45B351B9DB2ED00CEEE26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF45B331B9DB2ED00CEEE26 /* LaunchScreen.xib */; };
+		BCF45B411B9DB2ED00CEEE26 /* AIweichatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF45B401B9DB2ED00CEEE26 /* AIweichatTests.m */; };
+		BCF45B5F1B9DB79D00CEEE26 /* AINearbyPersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF45B5E1B9DB79D00CEEE26 /* AINearbyPersonController.m */; };
+		BCF45B651B9DB7F100CEEE26 /* AIRecentPersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF45B641B9DB7F100CEEE26 /* AIRecentPersonController.m */; };
+		BCF45B6B1B9DC2F300CEEE26 /* AIRecentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF45B691B9DC2F300CEEE26 /* AIRecentCell.m */; };
+		BCF45B6C1B9DC2F300CEEE26 /* AIRecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF45B6A1B9DC2F300CEEE26 /* AIRecentCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCF45B3B1B9DB2ED00CEEE26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF45B191B9DB2ED00CEEE26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF45B201B9DB2ED00CEEE26;
+			remoteInfo = AIweichat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC56001D1B9EC14A00C974D9 /* AIChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIChatView.h; sourceTree = "<group>"; };
+		BC56001E1B9EC14A00C974D9 /* AIChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIChatView.m; sourceTree = "<group>"; };
+		BC5600201B9EC23C00C974D9 /* chatTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = chatTest.xib; sourceTree = "<group>"; };
+		BCCB8E2D1B9EB40B004ED334 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		BCCB8E311B9EB557004ED334 /* UIImage+resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+resizing.h"; sourceTree = "<group>"; };
+		BCCB8E321B9EB557004ED334 /* UIImage+resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+resizing.m"; sourceTree = "<group>"; };
+		BCCB8E351B9EB59E004ED334 /* AIChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIChatController.h; sourceTree = "<group>"; };
+		BCCB8E361B9EB59E004ED334 /* AIChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIChatController.m; sourceTree = "<group>"; };
+		BCCB8E391B9EB5C5004ED334 /* AICellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICellView.h; sourceTree = "<group>"; };
+		BCCB8E3A1B9EB5C5004ED334 /* AICellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AICellView.m; sourceTree = "<group>"; };
+		BCCB8E3D1B9EB5D5004ED334 /* AICellDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICellDataModel.h; sourceTree = "<group>"; };
+		BCCB8E3E1B9EB5D5004ED334 /* AICellDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AICellDataModel.m; sourceTree = "<group>"; };
+		BCCB8E3F1B9EB5D5004ED334 /* AICellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICellFrameModel.h; sourceTree = "<group>"; };
+		BCCB8E401B9EB5D5004ED334 /* AICellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AICellFrameModel.m; sourceTree = "<group>"; };
+		BCCB8E431B9EB5E1004ED334 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		BCCB8E451B9EB5E7004ED334 /* autoanswer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoanswer.plist; sourceTree = "<group>"; };
+		BCDF323F1B9E7A3E00C9F0B4 /* AIParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIParentViewController.h; sourceTree = "<group>"; };
+		BCDF32401B9E7A3E00C9F0B4 /* AIParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIParentViewController.m; sourceTree = "<group>"; };
+		BCDF32431B9E801400C9F0B4 /* AIRecentParentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRecentParentController.h; sourceTree = "<group>"; };
+		BCDF32441B9E801400C9F0B4 /* AIRecentParentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRecentParentController.m; sourceTree = "<group>"; };
+		BCDF32491B9E888200C9F0B4 /* AIMyConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMyConfigController.h; sourceTree = "<group>"; };
+		BCDF324A1B9E888200C9F0B4 /* AIMyConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIMyConfigController.m; sourceTree = "<group>"; };
+		BCDF32501B9E8A6400C9F0B4 /* AIConfig.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AIConfig.storyboard; sourceTree = "<group>"; };
+		BCDF32541B9E9E7200C9F0B4 /* AICreateBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICreateBar.h; sourceTree = "<group>"; };
+		BCDF32551B9E9E7200C9F0B4 /* AICreateBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AICreateBar.m; sourceTree = "<group>"; };
+		BCDF32571B9E9FEC00C9F0B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BCDF325D1B9EA03400C9F0B4 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		BCDF325E1B9EA03400C9F0B4 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
+		BCDF325F1B9EA03400C9F0B4 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		BCDF32601B9EA03400C9F0B4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BCDF32611B9EA03400C9F0B4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BCDF32661B9EA34000C9F0B4 /* AILoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILoginController.h; sourceTree = "<group>"; };
+		BCDF32671B9EA34000C9F0B4 /* AILoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AILoginController.m; sourceTree = "<group>"; };
+		BCDF32691B9EA5FB00C9F0B4 /* AIConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIConfigModel.h; sourceTree = "<group>"; };
+		BCDF326A1B9EA5FB00C9F0B4 /* AIConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIConfigModel.m; sourceTree = "<group>"; };
+		BCDF32751B9EB1DF00C9F0B4 /* AIQQGroupsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIQQGroupsModel.h; sourceTree = "<group>"; };
+		BCDF32761B9EB1DF00C9F0B4 /* AIQQGroupsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIQQGroupsModel.m; sourceTree = "<group>"; };
+		BCDF32771B9EB1DF00C9F0B4 /* AIFriendsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFriendsModel.h; sourceTree = "<group>"; };
+		BCDF32781B9EB1DF00C9F0B4 /* AIFriendsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFriendsModel.m; sourceTree = "<group>"; };
+		BCDF327B1B9EB1EB00C9F0B4 /* AIFriendCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFriendCellView.h; sourceTree = "<group>"; };
+		BCDF327C1B9EB1EB00C9F0B4 /* AIFriendCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFriendCellView.m; sourceTree = "<group>"; };
+		BCDF327D1B9EB1EB00C9F0B4 /* AIHeaderCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHeaderCellView.h; sourceTree = "<group>"; };
+		BCDF327E1B9EB1EB00C9F0B4 /* AIHeaderCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIHeaderCellView.m; sourceTree = "<group>"; };
+		BCDF32811B9EB1F500C9F0B4 /* AIaddressBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIaddressBookController.h; sourceTree = "<group>"; };
+		BCDF32821B9EB1F500C9F0B4 /* AIaddressBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIaddressBookController.m; sourceTree = "<group>"; };
+		BCF45B211B9DB2ED00CEEE26 /* AIweichat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIweichat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF45B251B9DB2ED00CEEE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF45B261B9DB2ED00CEEE26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCF45B281B9DB2ED00CEEE26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCF45B291B9DB2ED00CEEE26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCF45B311B9DB2ED00CEEE26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCF45B341B9DB2ED00CEEE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BCF45B3A1B9DB2ED00CEEE26 /* AIweichatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIweichatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF45B3F1B9DB2ED00CEEE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF45B401B9DB2ED00CEEE26 /* AIweichatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIweichatTests.m; sourceTree = "<group>"; };
+		BCF45B5D1B9DB79D00CEEE26 /* AINearbyPersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AINearbyPersonController.h; sourceTree = "<group>"; };
+		BCF45B5E1B9DB79D00CEEE26 /* AINearbyPersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AINearbyPersonController.m; sourceTree = "<group>"; };
+		BCF45B631B9DB7F100CEEE26 /* AIRecentPersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRecentPersonController.h; sourceTree = "<group>"; };
+		BCF45B641B9DB7F100CEEE26 /* AIRecentPersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRecentPersonController.m; sourceTree = "<group>"; };
+		BCF45B661B9DBB2B00CEEE26 /* AIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIDefine.h; path = ../AIDefine.h; sourceTree = "<group>"; };
+		BCF45B681B9DC2F300CEEE26 /* AIRecentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRecentCell.h; sourceTree = "<group>"; };
+		BCF45B691B9DC2F300CEEE26 /* AIRecentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRecentCell.m; sourceTree = "<group>"; };
+		BCF45B6A1B9DC2F300CEEE26 /* AIRecentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AIRecentCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF45B1E1B9DB2ED00CEEE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF45B371B9DB2ED00CEEE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCCB8E2F1B9EB52E004ED334 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB8E3C1B9EB5CD004ED334 /* Model */,
+				BCCB8E381B9EB5BB004ED334 /* View */,
+				BCCB8E341B9EB581004ED334 /* Controller */,
+				BCCB8E301B9EB546004ED334 /* Category */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		BCCB8E301B9EB546004ED334 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB8E311B9EB557004ED334 /* UIImage+resizing.h */,
+				BCCB8E321B9EB557004ED334 /* UIImage+resizing.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		BCCB8E341B9EB581004ED334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB8E351B9EB59E004ED334 /* AIChatController.h */,
+				BCCB8E361B9EB59E004ED334 /* AIChatController.m */,
+				BC5600201B9EC23C00C974D9 /* chatTest.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCCB8E381B9EB5BB004ED334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB8E391B9EB5C5004ED334 /* AICellView.h */,
+				BCCB8E3A1B9EB5C5004ED334 /* AICellView.m */,
+				BC56001D1B9EC14A00C974D9 /* AIChatView.h */,
+				BC56001E1B9EC14A00C974D9 /* AIChatView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BCCB8E3C1B9EB5CD004ED334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB8E3D1B9EB5D5004ED334 /* AICellDataModel.h */,
+				BCCB8E3E1B9EB5D5004ED334 /* AICellDataModel.m */,
+				BCCB8E3F1B9EB5D5004ED334 /* AICellFrameModel.h */,
+				BCCB8E401B9EB5D5004ED334 /* AICellFrameModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCDF323E1B9E79CE00C9F0B4 /* AIParent */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF323F1B9E7A3E00C9F0B4 /* AIParentViewController.h */,
+				BCDF32401B9E7A3E00C9F0B4 /* AIParentViewController.m */,
+				BCDF32541B9E9E7200C9F0B4 /* AICreateBar.h */,
+				BCDF32551B9E9E7200C9F0B4 /* AICreateBar.m */,
+			);
+			name = AIParent;
+			sourceTree = "<group>";
+		};
+		BCDF32421B9E7EDB00C9F0B4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B281B9DB2ED00CEEE26 /* AppDelegate.h */,
+				BCF45B291B9DB2ED00CEEE26 /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		BCDF32461B9E805800C9F0B4 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32431B9E801400C9F0B4 /* AIRecentParentController.h */,
+				BCDF32441B9E801400C9F0B4 /* AIRecentParentController.m */,
+			);
+			name = Parent;
+			sourceTree = "<group>";
+		};
+		BCDF325C1B9EA03400C9F0B4 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF325D1B9EA03400C9F0B4 /* MBProgressHUD+NJ.h */,
+				BCDF325E1B9EA03400C9F0B4 /* MBProgressHUD+NJ.m */,
+				BCDF325F1B9EA03400C9F0B4 /* MBProgressHUD.bundle */,
+				BCDF32601B9EA03400C9F0B4 /* MBProgressHUD.h */,
+				BCDF32611B9EA03400C9F0B4 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		BCDF32651B9EA03D00C9F0B4 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF325C1B9EA03400C9F0B4 /* MBProgressHUD */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		BCDF326C1B9EA6FA00C9F0B4 /* AILogin(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF326E1B9EA75600C9F0B4 /* Model */,
+				BCDF326D1B9EA74200C9F0B4 /* Controller */,
+				BCDF32571B9E9FEC00C9F0B4 /* Main.storyboard */,
+			);
+			name = "AILogin(登录)";
+			sourceTree = "<group>";
+		};
+		BCDF326D1B9EA74200C9F0B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32661B9EA34000C9F0B4 /* AILoginController.h */,
+				BCDF32671B9EA34000C9F0B4 /* AILoginController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCDF326E1B9EA75600C9F0B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32691B9EA5FB00C9F0B4 /* AIConfigModel.h */,
+				BCDF326A1B9EA5FB00C9F0B4 /* AIConfigModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCDF32721B9EB1A000C9F0B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32811B9EB1F500C9F0B4 /* AIaddressBookController.h */,
+				BCDF32821B9EB1F500C9F0B4 /* AIaddressBookController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCDF32731B9EB1BE00C9F0B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF327B1B9EB1EB00C9F0B4 /* AIFriendCellView.h */,
+				BCDF327C1B9EB1EB00C9F0B4 /* AIFriendCellView.m */,
+				BCDF327D1B9EB1EB00C9F0B4 /* AIHeaderCellView.h */,
+				BCDF327E1B9EB1EB00C9F0B4 /* AIHeaderCellView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BCDF32741B9EB1CA00C9F0B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32751B9EB1DF00C9F0B4 /* AIQQGroupsModel.h */,
+				BCDF32761B9EB1DF00C9F0B4 /* AIQQGroupsModel.m */,
+				BCDF32771B9EB1DF00C9F0B4 /* AIFriendsModel.h */,
+				BCDF32781B9EB1DF00C9F0B4 /* AIFriendsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCF45B181B9DB2ED00CEEE26 = {
+			isa = PBXGroup;
+			children = (
+				BCF45B231B9DB2ED00CEEE26 /* AIweichat */,
+				BCF45B3D1B9DB2ED00CEEE26 /* AIweichatTests */,
+				BCF45B221B9DB2ED00CEEE26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF45B221B9DB2ED00CEEE26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B211B9DB2ED00CEEE26 /* AIweichat.app */,
+				BCF45B3A1B9DB2ED00CEEE26 /* AIweichatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF45B231B9DB2ED00CEEE26 /* AIweichat */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B661B9DBB2B00CEEE26 /* AIDefine.h */,
+				BCCB8E2F1B9EB52E004ED334 /* Chat */,
+				BCDF32651B9EA03D00C9F0B4 /* libs */,
+				BCDF326C1B9EA6FA00C9F0B4 /* AILogin(登录) */,
+				BCDF32421B9E7EDB00C9F0B4 /* Other */,
+				BCDF323E1B9E79CE00C9F0B4 /* AIParent */,
+				BCF45B4D1B9DB41500CEEE26 /* MyConfig(我的设置) */,
+				BCF45B4C1B9DB3E700CEEE26 /* NearbyPerson(附近的人) */,
+				BCF45B4B1B9DB3C100CEEE26 /* AddressBook(通讯录) */,
+				BCF45B4A1B9DB37000CEEE26 /* RecentPerson(最近联系人) */,
+				BCF45B311B9DB2ED00CEEE26 /* Images.xcassets */,
+				BCF45B241B9DB2ED00CEEE26 /* Supporting Files */,
+			);
+			path = AIweichat;
+			sourceTree = "<group>";
+		};
+		BCF45B241B9DB2ED00CEEE26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB8E451B9EB5E7004ED334 /* autoanswer.plist */,
+				BCCB8E431B9EB5E1004ED334 /* messages.plist */,
+				BCCB8E2D1B9EB40B004ED334 /* friends.plist */,
+				BCF45B331B9DB2ED00CEEE26 /* LaunchScreen.xib */,
+				BCF45B251B9DB2ED00CEEE26 /* Info.plist */,
+				BCF45B261B9DB2ED00CEEE26 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF45B3D1B9DB2ED00CEEE26 /* AIweichatTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B401B9DB2ED00CEEE26 /* AIweichatTests.m */,
+				BCF45B3E1B9DB2ED00CEEE26 /* Supporting Files */,
+			);
+			path = AIweichatTests;
+			sourceTree = "<group>";
+		};
+		BCF45B3E1B9DB2ED00CEEE26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B3F1B9DB2ED00CEEE26 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF45B4A1B9DB37000CEEE26 /* RecentPerson(最近联系人) */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B6E1B9DCB9400CEEE26 /* Controller */,
+				BCF45B6D1B9DC59B00CEEE26 /* View */,
+				BCF45B671B9DC29200CEEE26 /* Model */,
+			);
+			name = "RecentPerson(最近联系人)";
+			sourceTree = "<group>";
+		};
+		BCF45B4B1B9DB3C100CEEE26 /* AddressBook(通讯录) */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32741B9EB1CA00C9F0B4 /* Model */,
+				BCDF32731B9EB1BE00C9F0B4 /* View */,
+				BCDF32721B9EB1A000C9F0B4 /* Controller */,
+			);
+			name = "AddressBook(通讯录)";
+			sourceTree = "<group>";
+		};
+		BCF45B4C1B9DB3E700CEEE26 /* NearbyPerson(附近的人) */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B5D1B9DB79D00CEEE26 /* AINearbyPersonController.h */,
+				BCF45B5E1B9DB79D00CEEE26 /* AINearbyPersonController.m */,
+			);
+			name = "NearbyPerson(附近的人)";
+			sourceTree = "<group>";
+		};
+		BCF45B4D1B9DB41500CEEE26 /* MyConfig(我的设置) */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF32491B9E888200C9F0B4 /* AIMyConfigController.h */,
+				BCDF324A1B9E888200C9F0B4 /* AIMyConfigController.m */,
+				BCDF32501B9E8A6400C9F0B4 /* AIConfig.storyboard */,
+			);
+			name = "MyConfig(我的设置)";
+			sourceTree = "<group>";
+		};
+		BCF45B671B9DC29200CEEE26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCF45B6D1B9DC59B00CEEE26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B681B9DC2F300CEEE26 /* AIRecentCell.h */,
+				BCF45B691B9DC2F300CEEE26 /* AIRecentCell.m */,
+				BCF45B6A1B9DC2F300CEEE26 /* AIRecentCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BCF45B6E1B9DCB9400CEEE26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCF45B631B9DB7F100CEEE26 /* AIRecentPersonController.h */,
+				BCF45B641B9DB7F100CEEE26 /* AIRecentPersonController.m */,
+				BCDF32461B9E805800C9F0B4 /* Parent */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF45B201B9DB2ED00CEEE26 /* AIweichat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF45B441B9DB2ED00CEEE26 /* Build configuration list for PBXNativeTarget "AIweichat" */;
+			buildPhases = (
+				BCF45B1D1B9DB2ED00CEEE26 /* Sources */,
+				BCF45B1E1B9DB2ED00CEEE26 /* Frameworks */,
+				BCF45B1F1B9DB2ED00CEEE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIweichat;
+			productName = AIweichat;
+			productReference = BCF45B211B9DB2ED00CEEE26 /* AIweichat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF45B391B9DB2ED00CEEE26 /* AIweichatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF45B471B9DB2ED00CEEE26 /* Build configuration list for PBXNativeTarget "AIweichatTests" */;
+			buildPhases = (
+				BCF45B361B9DB2ED00CEEE26 /* Sources */,
+				BCF45B371B9DB2ED00CEEE26 /* Frameworks */,
+				BCF45B381B9DB2ED00CEEE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF45B3C1B9DB2ED00CEEE26 /* PBXTargetDependency */,
+			);
+			name = AIweichatTests;
+			productName = AIweichatTests;
+			productReference = BCF45B3A1B9DB2ED00CEEE26 /* AIweichatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF45B191B9DB2ED00CEEE26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = aizexin;
+				TargetAttributes = {
+					BCF45B201B9DB2ED00CEEE26 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = Y56852HD87;
+					};
+					BCF45B391B9DB2ED00CEEE26 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = BCF45B201B9DB2ED00CEEE26;
+					};
+				};
+			};
+			buildConfigurationList = BCF45B1C1B9DB2ED00CEEE26 /* Build configuration list for PBXProject "AIweichat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF45B181B9DB2ED00CEEE26;
+			productRefGroup = BCF45B221B9DB2ED00CEEE26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF45B201B9DB2ED00CEEE26 /* AIweichat */,
+				BCF45B391B9DB2ED00CEEE26 /* AIweichatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF45B1F1B9DB2ED00CEEE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCB8E441B9EB5E1004ED334 /* messages.plist in Resources */,
+				BCCB8E2E1B9EB40B004ED334 /* friends.plist in Resources */,
+				BCF45B6C1B9DC2F300CEEE26 /* AIRecentCell.xib in Resources */,
+				BCDF32581B9E9FEC00C9F0B4 /* Main.storyboard in Resources */,
+				BCDF32511B9E8A6400C9F0B4 /* AIConfig.storyboard in Resources */,
+				BCF45B351B9DB2ED00CEEE26 /* LaunchScreen.xib in Resources */,
+				BCF45B321B9DB2ED00CEEE26 /* Images.xcassets in Resources */,
+				BC5600211B9EC23C00C974D9 /* chatTest.xib in Resources */,
+				BCCB8E461B9EB5E7004ED334 /* autoanswer.plist in Resources */,
+				BCDF32631B9EA03400C9F0B4 /* MBProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF45B381B9DB2ED00CEEE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF45B1D1B9DB2ED00CEEE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF45B5F1B9DB79D00CEEE26 /* AINearbyPersonController.m in Sources */,
+				BCDF327A1B9EB1DF00C9F0B4 /* AIFriendsModel.m in Sources */,
+				BCDF32621B9EA03400C9F0B4 /* MBProgressHUD+NJ.m in Sources */,
+				BCDF327F1B9EB1EB00C9F0B4 /* AIFriendCellView.m in Sources */,
+				BC56001F1B9EC14A00C974D9 /* AIChatView.m in Sources */,
+				BCCB8E421B9EB5D5004ED334 /* AICellFrameModel.m in Sources */,
+				BCDF32831B9EB1F500C9F0B4 /* AIaddressBookController.m in Sources */,
+				BCCB8E331B9EB557004ED334 /* UIImage+resizing.m in Sources */,
+				BCDF326B1B9EA5FB00C9F0B4 /* AIConfigModel.m in Sources */,
+				BCF45B651B9DB7F100CEEE26 /* AIRecentPersonController.m in Sources */,
+				BCDF32791B9EB1DF00C9F0B4 /* AIQQGroupsModel.m in Sources */,
+				BCDF32561B9E9E7200C9F0B4 /* AICreateBar.m in Sources */,
+				BCDF324C1B9E888200C9F0B4 /* AIMyConfigController.m in Sources */,
+				BCDF32681B9EA34000C9F0B4 /* AILoginController.m in Sources */,
+				BCF45B2A1B9DB2ED00CEEE26 /* AppDelegate.m in Sources */,
+				BCF45B6B1B9DC2F300CEEE26 /* AIRecentCell.m in Sources */,
+				BCCB8E3B1B9EB5C5004ED334 /* AICellView.m in Sources */,
+				BCCB8E411B9EB5D5004ED334 /* AICellDataModel.m in Sources */,
+				BCCB8E371B9EB59E004ED334 /* AIChatController.m in Sources */,
+				BCDF32411B9E7A3E00C9F0B4 /* AIParentViewController.m in Sources */,
+				BCDF32641B9EA03400C9F0B4 /* MBProgressHUD.m in Sources */,
+				BCDF32451B9E801400C9F0B4 /* AIRecentParentController.m in Sources */,
+				BCDF32801B9EB1EB00C9F0B4 /* AIHeaderCellView.m in Sources */,
+				BCF45B271B9DB2ED00CEEE26 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF45B361B9DB2ED00CEEE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF45B411B9DB2ED00CEEE26 /* AIweichatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCF45B3C1B9DB2ED00CEEE26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF45B201B9DB2ED00CEEE26 /* AIweichat */;
+			targetProxy = BCF45B3B1B9DB2ED00CEEE26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCF45B331B9DB2ED00CEEE26 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF45B341B9DB2ED00CEEE26 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF45B421B9DB2ED00CEEE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zexin ai (58988ATJQN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zexin ai (58988ATJQN)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCF45B431B9DB2ED00CEEE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zexin ai (58988ATJQN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zexin ai (58988ATJQN)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF45B451B9DB2ED00CEEE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AIweichat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BCF45B461B9DB2ED00CEEE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AIweichat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		BCF45B481B9DB2ED00CEEE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AIweichatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIweichat.app/AIweichat";
+			};
+			name = Debug;
+		};
+		BCF45B491B9DB2ED00CEEE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AIweichatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIweichat.app/AIweichat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF45B1C1B9DB2ED00CEEE26 /* Build configuration list for PBXProject "AIweichat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF45B421B9DB2ED00CEEE26 /* Debug */,
+				BCF45B431B9DB2ED00CEEE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF45B441B9DB2ED00CEEE26 /* Build configuration list for PBXNativeTarget "AIweichat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF45B451B9DB2ED00CEEE26 /* Debug */,
+				BCF45B461B9DB2ED00CEEE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF45B471B9DB2ED00CEEE26 /* Build configuration list for PBXNativeTarget "AIweichatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF45B481B9DB2ED00CEEE26 /* Debug */,
+				BCF45B491B9DB2ED00CEEE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF45B191B9DB2ED00CEEE26 /* Project object */;
+}
